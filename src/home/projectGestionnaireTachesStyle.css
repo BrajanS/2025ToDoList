@@ -1,0 +1,43 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.blueBtn {
+  background: rgb(72, 123, 190) !important;
+  color: white;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#categories > button {
+  background-color: gainsboro;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 7.5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+select {
+  box-sizing: border-box;
+  padding: 7.5px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+button:hover,
+select:hover {
+  outline: 2px solid black;
+}
+
+input[type="checkbox"]:hover {
+  transform: scale(1.5);
+  transform-origin: left;
+}
