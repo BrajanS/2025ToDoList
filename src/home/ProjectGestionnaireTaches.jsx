@@ -35,7 +35,7 @@ export default function ProjectGestionTaches() {
       setDataToDo((current) => {
         const copyArray = [...current];
         const data = {
-          task: taskText,
+          task: taskText.value, // ✅ fix here
           priority: "low",
           isChecked: false,
           createdAt: new Date().toISOString(),
@@ -151,12 +151,12 @@ export default function ProjectGestionTaches() {
           </button>
         )}
         {dataToDo
-          .filter((item) =>
-            isDone === undefined ? true : item.isChecked === isDone
-          )
           .sort((a, b) => {
             return b[orderDefine].localeCompare(a[orderDefine]);
           })
+          .filter((item) =>
+            isDone === undefined ? true : item.isChecked === isDone
+          )
           .map((item, key) => {
             return (
               <div
